@@ -10,8 +10,8 @@ import java.util.List;
 
 public interface ConceptoController {
 
-     String crearConcepto(DTOConcepto dtoconcepto);
+      ResponseEntity crearConcepto(DTOConcepto dtoconcepto);
     List<DTOConcepto> getConcepto();
-    String eliminar(Long id);
+    ResponseEntity eliminar(Long id);
     ResponseEntity<Object> actuConcepto( Long id,  DTOConcepto dtoConcepto);
 }

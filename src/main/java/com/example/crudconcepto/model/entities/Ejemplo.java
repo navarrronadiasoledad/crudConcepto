@@ -11,6 +11,11 @@ public class Ejemplo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEjemplo;
-    private String contenidoConcepto;
+
+
+    @Column(name = "decripcion_ejemplo")
     private String decripcionEjemplo;
+    @Column(name = "contenido_ejemplo")
+    private String contenidoEjemplo;
+
 }

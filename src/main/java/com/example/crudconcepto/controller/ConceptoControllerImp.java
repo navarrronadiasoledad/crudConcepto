@@ -28,9 +28,8 @@ public class ConceptoControllerImp implements ConceptoController{
     @Override
     @GetMapping("/conceptos")
     public List<DTOConcepto> getConcepto(){
-      /*public ResponseEntity<List<DTOConcepto>> getConcepto(@RequestBody DTOConcepto dtoConcepto) {
-      List<DTOConcepto> conce=conceptoService.findAllConcepto(dtoConcepto);
-       return ResponseEntity.ok().body(conce);*/
+         List<DTOConcepto> conce=conceptoService.findAllConcepto();
+
         return conceptoService.findAllConcepto();
     }
 

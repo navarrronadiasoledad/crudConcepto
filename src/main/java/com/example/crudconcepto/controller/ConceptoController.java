@@ -11,7 +11,8 @@ import java.util.List;
 public interface ConceptoController {
 
       ResponseEntity crearConcepto(DTOConcepto dtoconcepto);
-    List<DTOConcepto> getConcepto();
+   List<DTOConcepto> getConcepto();
+ // ResponseEntity<List<DTOConcepto>> getConcepto( DTOConcepto dtoConcepto);
     ResponseEntity eliminar(Long id);
     ResponseEntity<Object> actuConcepto( Long id,  DTOConcepto dtoConcepto);
 }

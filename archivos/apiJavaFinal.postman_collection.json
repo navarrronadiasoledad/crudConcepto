@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "b22cc19a-2c6b-49ff-827b-b71e1fcf4286",
+		"name": "apiJavaFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver los conceptos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/conceptos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conceptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un concepto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombreConcepto\":\"Operadores de complemento lógico y negación\",\r\n\"numeroConcepto\": 4,\r\n\"contenido\":\"El operador de complemento lógico,!, invierte el valor de una expresión booleana. Por ejemplo,si el valor es verdadero, se convertirá en falso y viceversa. \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eliminar/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eliminar/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eliminar",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/actulizar/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombreConcepto\":\"concepto5\",\r\n\"numeroConcepto\": 20,\r\n\"contenido\":\"concepto valido para todo el 14/4 funciono\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/actulizar/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actulizar",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
